@@ -2,97 +2,70 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trần Trường Thành - Trang cá nhân</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #34495e;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-    }
-    section {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #2c3e50;
-    }
-    .skills span {
-      display: inline-block;
-      background-color: #3498db;
-      color: white;
-      padding: 6px 12px;
-      margin: 5px 5px 5px 0;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #34495e;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeNova Studio - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- <header>
-    <img src="https://via.placeholder.com/140" alt="Ảnh đại diện">
-    <h1>Trần Trường Thành</h1>
-    <p>Nhà phát triển Web | Đam mê công nghệ | Học hỏi không ngừng</p>
+  <header>
+    <h1>CodeNova Studio</h1>
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <a href="#projects">Dự án</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>👋 Giới thiệu</h2>
-    <p>Chào bạn! Mình là <strong>Trần Trường Thành</strong>, một lập trình viên web với đam mê xây dựng những sản phẩm số thân thiện và hiệu quả. Mình luôn nỗ lực học hỏi công nghệ mới và áp dụng chúng vào thực tế để nâng cao trải nghiệm người dùng.</p>
+  <section class="hero">
+    <h2>Xin chào, tôi là Trần Trường Thành 👋</h2>
+    <p>Lập trình viên Web Frontend & Backend | Đam mê sáng tạo giao diện hiện đại</p>
   </section>
 
-  <section id="skills">
-    <h2>🛠️ Kỹ năng</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Node.js</span>
-      <span>Git</span>
+  <section id="about" class="about">
+    <h2>Về Nhóm</h2>
+    <p><strong>CodeNova Studio</strong> là một nhóm (hiện tại gồm 1 thành viên) chuyên phát triển website hiện đại, thân thiện với người dùng, tập trung vào trải nghiệm và hiệu suất.</p>
+
+    <div class="member-card">
+      <img src="https://i.ibb.co/5M2tLxD/avatar.png" alt="Thành viên">
+      <h3>Trần Trường Thành</h3>
+      <p>Lập trình viên Web | HTML, CSS, JavaScript, React, Node.js</p>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>💼 Dự án</h2>
-    <ul>
-      <li><strong>Website Portfolio cá nhân</strong> – Trang web giới thiệu bản thân, kỹ năng và dự án (HTML/CSS/JS).</li>
-      <li><strong>Ứng dụng To-Do List</strong> – Quản lý công việc đơn giản với React & LocalStorage.</li>
-      <li><strong>Landing Page sản phẩm</strong> – Thiết kế UI bắt mắt cho trang quảng bá sản phẩm.</li>
-    </ul>
+  <section id="projects" class="projects">
+    <h2>Dự Án</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="https://i.ibb.co/rcxv6fV/web1.jpg" alt="Dự án 1">
+        <h3>Website Tin tức Công nghệ</h3>
+        <p>Giao diện tối giản, hiển thị tin tức mới nhất về công nghệ và xu hướng số hóa.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://i.ibb.co/XJKH7Xd/web2.jpg" alt="Dự án 2">
+        <h3>Portfolio Cá nhân</h3>
+        <p>Website giới thiệu bản thân, kỹ năng và dự án – giao diện hiện đại, phản hồi nhanh.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://i.ibb.co/BjH3N6S/web3.jpg" alt="Dự án 3">
+        <h3>Website Doanh nghiệp</h3>
+        <p>Trang web giới thiệu công ty với giao diện chuyên nghiệp, hỗ trợ mobile.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Liên hệ</h2>
+    <p>Nếu bạn muốn hợp tác hoặc trao đổi về dự án, hãy liên hệ qua:</p>
+    <p>Email: <a href="mailto:trantruongthanh312@gmail.com">trantruongthanh312@gmail.com</a></p>
+    <p>Facebook: <a href="#">https://www.facebook.com/tran.thanh.126110</a></p>
+    <p>GitHub: <a href="#">github.com/truongthanh</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Trần Trường Thành. All rights reserved.
+    © 2025 CodeNova Studio | Designed by Trần Trường Thành
   </footer>
 
 </body>
