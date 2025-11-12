@@ -2,75 +2,82 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodeNova Studio - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Nhóm</title>
+  <link rel="stylesheet" href="sheet.css">
 </head>
 <body>
 
   <header>
-    <h1>CodeNova Studio</h1>
-    <nav>
-      <a href="#about">Giới thiệu</a>
-      <a href="#projects">Dự án</a>
-      <a href="#contact">Liên hệ</a>
-    </nav>
+    <h1>TThành Studio Code</h1>
+    <p>Chúng tôi là một nhóm đam mê thiết kế và công nghệ</p>
+    <img src="a modern logo design.png" class="logo">
   </header>
-
-  <section class="hero">
-    <h2>Xin chào, tôi là Trần Trường Thành 👋</h2>
-    <p>Lập trình viên Web Frontend & Backend | Đam mê sáng tạo giao diện hiện đại</p>
+  <nav>
+  <a href="gioithieu.html">Giới thiệu</a>
+  <a href="thanhvien.html">Thành viên</a>
+  <a href="duan.html">Dự án</a>
+  <a href="kynang.html">Kỹ năng</a>
+  <a href="hinhanh.html">Hình ảnh</a>
+  <a href="video.html">Video</a>
+  <a href="lienhe.html">Liên hệ</a>
+  <a href="phanhoi.html">Phản hồi</a>
+</nav>
+  <section id="gioithieu">
+    <h2>Giới thiệu</h2>
+    <p>Chúng tôi là nhóm sinh viên chuyên ngành công nghệ thông tin, cùng nhau thực hiện các dự án sáng tạo.</p>
   </section>
 
-  <section id="about" class="about">
-    <h2>Về Nhóm</h2>
-    <p><strong>CodeNova Studio</strong> là một nhóm (hiện tại gồm 1 thành viên) chuyên phát triển website hiện đại, thân thiện với người dùng, tập trung vào trải nghiệm và hiệu suất.</p>
-
-    <div class="member-card">
-      <img src="https://i.ibb.co/5M2tLxD/avatar.png" alt="Thành viên">
-      <h3>Trần Trường Thành</h3>
-      <p>Lập trình viên Web | HTML, CSS, JavaScript, React, Node.js</p>
-    </div>
+  <section id="thanhvien">
+    <h2>Thành viên</h2>
+    <ul>
+      <li>Trường Thành – Trưởng nhóm</li>
+      <li>Khôi – Thiết kế UI/UX</li>
+      <li>Vinh – Lập trình Frontend</li>
+      <li>Tuấn – Lập trình Backend</li>
+    </ul>
   </section>
 
-  <section id="projects" class="projects">
-    <h2>Dự Án</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <img src="https://i.ibb.co/rcxv6fV/web1.jpg" alt="Dự án 1">
-        <h3>Website Tin tức Công nghệ</h3>
-        <p>Giao diện tối giản, hiển thị tin tức mới nhất về công nghệ và xu hướng số hóa.</p>
-      </div>
-
-      <div class="project">
-        <img src="https://i.ibb.co/XJKH7Xd/web2.jpg" alt="Dự án 2">
-        <h3>Portfolio Cá nhân</h3>
-        <p>Website giới thiệu bản thân, kỹ năng và dự án – giao diện hiện đại, phản hồi nhanh.</p>
-      </div>
-
-      <div class="project">
-        <img src="https://i.ibb.co/BjH3N6S/web3.jpg" alt="Dự án 3">
-        <h3>Website Doanh nghiệp</h3>
-        <p>Trang web giới thiệu công ty với giao diện chuyên nghiệp, hỗ trợ mobile.</p>
-      </div>
-    </div>
+  <section id="duan">
+    <h2>Dự án</h2>
+    <p>Chúng tôi đã thực hiện các dự án như website bán hàng, ứng dụng quản lý công việc, và chatbot hỗ trợ học tập.</p>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="kynang">
+    <h2>Kỹ năng</h2>
+    <p>HTML, CSS, JavaScript, React, Node.js, Figma, Git, Firebase.</p>
+  </section>
+
+  <section id="hinhanh">
+    <h2>Hình ảnh các buổi làm việc nhóm</h2>
+    <p>Hình ảnh các buổi làm việc nhóm và sản phẩm demo sẽ được cập nhật tại đây.</p>
+  </section>
+
+  <section id="video">
+    <h2>Video</h2>
+    <p>Video giới thiệu nhóm</p>
+  </section>
+
+  <section id="lienhe">
     <h2>Liên hệ</h2>
-    <p>Nếu bạn muốn hợp tác hoặc trao đổi về dự án, hãy liên hệ qua:</p>
     <p>Email: <a href="mailto:trantruongthanh312@gmail.com">trantruongthanh312@gmail.com</a></p>
     <p>Facebook: <a href="https://www.facebook.com/tran.thanh.126110" target="_blank">https://www.facebook.com/tran.thanh.126110</a></p>
-    <p>GitHub: <a href="https://github.com/tthanh312" target="_blank">github.com/tthanh312</a></p>
   </section>
-  
+
+  <section id="phanhoi">
+    <h2>Phản hồi</h2>
+    <form>
+      <label for="name">Tên:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="message">Phản hồi:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Gửi">
+    </form>
+  </section>
+
   <footer>
-    © 2025 CodeNova Studio | Designed by Trần Trường Thành
+    <p>&copy; 2025 TThành Studio Code.</p>
   </footer>
 
 </body>
-
 </html>
-
-
-
