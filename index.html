@@ -4,74 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio Nhóm</title>
-  <link rel="stylesheet" href="sheet.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
+    <img src="a modern logo design.png" class="logo" alt="Logo nhóm">
     <h1>TThành Studio Code</h1>
     <p>Chúng tôi là một nhóm đam mê thiết kế và công nghệ</p>
-    <img src="a modern logo design.png" class="logo">
   </header>
   <nav>
-  <a href="gioithieu.html">Giới thiệu</a>
-  <a href="thanhvien.html">Thành viên</a>
-  <a href="duan.html">Dự án</a>
-  <a href="kynang.html">Kỹ năng</a>
-  <a href="hinhanh.html">Hình ảnh</a>
-  <a href="video.html">Video</a>
-  <a href="lienhe.html">Liên hệ</a>
-  <a href="phanhoi.html">Phản hồi</a>
-</nav>
-  <section id="gioithieu">
-    <h2>Giới thiệu</h2>
-    <p>Chúng tôi là nhóm sinh viên chuyên ngành công nghệ thông tin, cùng nhau thực hiện các dự án sáng tạo.</p>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="thanhvien.html">Thành viên</a>
+    <a href="duan.html">Dự án</a>
+    <a href="kynang.html">Kỹ năng</a>
+    <a href="hinhanh.html">Hình ảnh</a>
+    <a href="video.html">Video</a>
+    <a href="lienhe.html">Liên hệ</a>
+    <a href="phanhoi.html">Phản hồi</a>
+  </nav>
+  <section id="gioithieu" class="hero">
+    <div class="hero-content">
+      <h2>Khám phá nhóm sáng tạo công nghệ</h2>
+      <p>Chúng tôi là nhóm sinh viên Công nghệ Thông tin chuyên phát triển các sản phẩm số hiện đại và hữu ích.</p>
+      <form class="search-bar">
+        <input type="text" placeholder="Bạn quan tâm đến sản phẩm nào?">
+        <button type="submit">Tìm kiếm</button>
+      </form>
+      <div class="popular-tags">
+        <span>#Ứng dụng web</span>
+        <span>#Giao diện người dùng</span>
+        <span>#Hệ thống quản lý</span>
+        <span>#AI Chatbot</span>
+        <span>#Thiết kế UX/UI</span>
+      </div>
+    </div>
   </section>
-
-  <section id="thanhvien">
-    <h2>Thành viên</h2>
+  <section id="duan" class="products">
+    <h2>🌟 Sản phẩm nổi bật</h2>
     <ul>
-      <li>Trường Thành – Trưởng nhóm</li>
-      <li>Khôi – Thiết kế UI/UX</li>
-      <li>Vinh – Lập trình Frontend</li>
-      <li>Tuấn – Lập trình Backend</li>
+      <li>📱 Ứng dụng quản lý công việc tích hợp Firebase</li>
+      <li>🛒 Website thương mại điện tử với React & Node.js</li>
+      <li>🤖 Chatbot hỗ trợ học tập sử dụng trí tuệ nhân tạo</li>
+      <li>🎨 Bộ giao diện người dùng thiết kế bằng Figma</li>
     </ul>
   </section>
-
-  <section id="duan">
-    <h2>Dự án</h2>
-    <p>Chúng tôi đã thực hiện các dự án như website bán hàng, ứng dụng quản lý công việc, và chatbot hỗ trợ học tập.</p>
+  <section id="thanhvien" class="team">
+    <h2>👨‍💻 Thành viên nhóm</h2>
+    <div class="members">
+      <div class="member">
+        <h3>Trường Thành</h3>
+        <p>Trưởng nhóm – Quản lý dự án & định hướng kỹ thuật</p>
+      </div>
+      <div class="member">
+        <h3>Khôi</h3>
+        <p>Thiết kế UI/UX – Tối ưu trải nghiệm người dùng</p>
+      </div>
+      <div class="member">
+        <h3>Vinh</h3>
+        <p>Frontend Developer – Xây dựng giao diện web</p>
+      </div>
+      <div class="member">
+        <h3>Tuấn</h3>
+        <p>Backend Developer – Phát triển hệ thống và API</p>
+      </div>
+    </div>
   </section>
 
-  <section id="kynang">
-    <h2>Kỹ năng</h2>
-    <p>HTML, CSS, JavaScript, React, Node.js, Figma, Git, Firebase.</p>
+  <section id="kynang" class="skills">
+    <h2>🧠 Kỹ năng & Công cụ</h2>
+    <p><strong>Ngôn ngữ & Framework:</strong> HTML, CSS, JavaScript, React, Node.js</p>
+    <p><strong>Thiết kế & Quản lý:</strong> Figma, Git, Firebase</p>
   </section>
 
-  <section id="hinhanh">
-    <h2>Hình ảnh các buổi làm việc nhóm</h2>
-    <p>Hình ảnh các buổi làm việc nhóm và sản phẩm demo sẽ được cập nhật tại đây.</p>
+  <section id="hinhanh" class="gallery">
+    <h2>📸 Hình ảnh hoạt động</h2>
+    <p>Hình ảnh các buổi brainstorming, coding session, và demo sản phẩm sẽ được cập nhật tại đây.</p>
   </section>
 
-  <section id="video">
-    <h2>Video</h2>
-    <p>Video giới thiệu nhóm</p>
+  <section id="video" class="videos">
+    <h2>🎥 Video Giới Thiệu</h2>
+    <p>Khám phá hành trình phát triển của nhóm qua video tổng hợp các dự án và hoạt động nổi bật.</p>
   </section>
 
-  <section id="lienhe">
-    <h2>Liên hệ</h2>
+  <section id="lienhe" class="contact">
+    <h2>📬 Liên Hệ Với Chúng Tôi</h2>
     <p>Email: <a href="mailto:trantruongthanh312@gmail.com">trantruongthanh312@gmail.com</a></p>
-    <p>Facebook: <a href="https://www.facebook.com/tran.thanh.126110" target="_blank">https://www.facebook.com/tran.thanh.126110</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/tran.thanh.126110" target="_blank">Trường Thành</a></p>
   </section>
 
-  <section id="phanhoi">
-    <h2>Phản hồi</h2>
+  <section id="phanhoi" class="feedback">
+    <h2>📝 Gửi Phản Hồi</h2>
     <form>
-      <label for="name">Tên:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="message">Phản hồi:</label><br>
-      <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-      <input type="submit" value="Gửi">
+      <label for="name">Tên của bạn:</label><br>
+      <input type="text" id="name" name="name" placeholder="Nhập tên..."><br>
+      <label for="message">Nội dung phản hồi:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" placeholder="Chúng tôi rất mong nhận được ý kiến từ bạn..."></textarea><br>
+      <input type="submit" value="Gửi phản hồi">
     </form>
   </section>
 
